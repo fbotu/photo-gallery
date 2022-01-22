@@ -1,0 +1,20 @@
+<!-- Install Next JS -->
+npx create-next-app@latest
+<!-- Enter app name -->
+cd photo-gallery
+npm run dev
+
+<!-- GIT -->
+echo "# photo-gallery" >> README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M master
+  git remote add origin https://github.com/fbotu/photo-gallery.git
+  git push -u origin master
+
+<!-- Addons -->
+npm install sass
+npm install --save styled-components
+npm install react-icons --save
+

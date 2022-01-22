@@ -1,0 +1,28 @@
+{
+  "name": "photo-gallery",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "echo 'Building Sanity to public/studio' && cd studio && yarn && npx @sanity/cli build ../public/studio -y && echo 'Done'",
+    "build": "next build",
+    "start": "next start",
+    "sanity": "cd studio && sanity start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/image-url": "^1.0.1",
+    "next": "12.0.8",
+    "next-sanity": "^0.4.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-tooltip": "^4.2.21",
+    "sass": "^1.49.0",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "eslint": "8.7.0",
+    "eslint-config-next": "12.0.8"
+  }
+}
